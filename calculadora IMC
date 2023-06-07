@@ -1,0 +1,24 @@
+print('Favor usar ponto para separar')
+altura = float(input('Qual a sua altura?: '))
+
+print(altura)
+
+peso = float(input('Qual o seu peso?: '))
+print(peso)
+
+IMC = peso / (altura/100)**2
+
+if IMC < 18.5:
+    print('Magreza')
+
+elif IMC >= 18.5 and IMC < 24.9:
+    print('Peso normal')
+
+elif IMC >= 25.0 and IMC < 29.9:
+    print('Sobrepeso')
+
+elif IMC >= 30.0 and IMC < 39.9:
+    print('Obesidade')
+
+else:
+    print('Obesidade grave')
